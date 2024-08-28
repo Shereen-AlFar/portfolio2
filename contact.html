@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Electronics Store</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="sidebar" class="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">Adminhup</span>
+        </a>
+        <ul class="side-menu top">
+            <li class=" homePage"><a href="index.html">
+                <i class='bx bxs-dashboard'></i>
+                <span class="text">Home</span>
+            </a></li>
+            <li onclick="location.href='product.html'"><a href="#">
+                <i class='bx bxs-shopping-bag-alt' ></i>
+                <span class="text">Product</span>
+            </a></li>
+            <li class="Selected"><a href="#">
+                <i class='bx bxs-doughnut-chart' ></i>
+                <span class="text">Selected Products</span>
+            </a></li>
+            <li onclick="location.href='contact.html'" class="active"><a href="#">
+                <i class='bx bxs-message-dots'></i>
+                <span class="text">Contact Us</span>
+            </a></li>
+            <!-- <li><a href="#">
+                <i class='bx bxs-group' ></i>
+                <span class="text">Team</span>
+            </a></li> -->
+        </ul>    
+        <ul class="side-menu">
+            <li><a href="#">
+                <i class='bx bxs-cog' ></i>
+                <span class="text">Setting</span>
+            </a></li>
+            <li><a href="#" class="logout">
+                <i class='bx bxs-log-out-circle' ></i>
+                <span class="text">Logout</span>
+            </a></li>
+        </ul>    
+    </section>
+    <section id="content" class="z-3">
+        <nav>
+            <i class='bx bx-menu fs-3' ></i>
+            <a href="#" class="nav-link">Categories</a>
+            <form action="">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <a href="#" class="notification">
+                <i class='bx bx-heart fs-3'></i>
+                <span class="num">0</span>
+            </a>
+            <a href="#" class="notification">
+                <i class='bx bxs-bell fs-3'></i>
+                <span class="num">8</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="image/Andrew Woods.png" alt="">
+            </a>
+        </nav>
+    </section>
+<div class="ccc">
+    <section class="contact-info">
+        <h2 >Contact Information</h2>
+        <p>Address: <span class="text-danger">123 Electronics Ave, Tech City</span></p>
+        <p>Phone: <span class="text-danger">+123-456-7890</span></p>
+        <p>Email: <span class="text-danger">info@electronicsstore.com</span></p>
+    </section>
+
+    <section class="working-hours">
+        <h2>Working Hours</h2>
+        <p class="">Monday - Friday: <span class="text-danger">9 AM - 8 PM</span></p>
+        <p>Saturday - Sunday: <span class="text-danger">10 AM - 6 PM</span></p>
+    </section>
+
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="bg-info">Send</button>
+        </form>
+    </section>
+    <section class="map">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb="  height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <!-- <section class="social-media">
+        <h2>Find Us on Social Media</h2>
+        <p>
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </section> -->
+    <footer class="bg-dark text-white d-flex align-items-center rounded-3">
+        <div class="parent-ftr d-flex  justify-content-between w-75 m-auto">
+          <div class="d1-ftr">
+            <h6 class="fs-5">Contact links</h6>
+            <ul class="mt-5 ms-4">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Linked in</a></li>
+              <li><a href="#">WhatsApp</a></li>
+            </ul>
+          </div>
+          <div class="d2-ftr">
+            <h6 class="fs-5">Explore</h6>
+            <ul class="mt-5">
+              <li>Best Sellers</li>
+              <li>On Sale</li>
+              <li>Best Of 2022</li>
+              <li>Featured</li>
+              <li>Gift Card</li>
+            </ul>
+          </div>
+          <div class="d3-ftr">
+            <h6 class="fs-5">Help</h6>
+            <ul class="mt-5">
+              <li>Track Order</li>
+              <li>Delivery & Returns</li>
+              <li>FAQs</li>
+              <li>Community</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</div>
+<div class="bodySlide d-none">
+    <h2 id="ntPro" class="">Not product</h2>
+    <div class="productt">
+        
+    </div>
+    <div class="foot border-top border-5 mt-2 rounded ">
+        <div class="d-flex justify-content-between px-1 pt-2">
+            <h5>Total Price :</h5>
+            <h5 id="totalPrice"></h5>
+            <div>
+                <button class="btn btn-info text-light d-none" id="btnPrices">Show price</button>
+                <button class="btn btn-info text-light d-none " id="btnShopNow">Shop All</button>
+                <p class="p-2 rounded bg-info text-light d-none" id="btnSure">Purchased successfully</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <script>
+//         document.addEventListener('DOMContentLoaded', function () {
+//     var ccc = document.querySelector(".ccc");
+//     var Selected = document.querySelector(".Selected");
+//     var SelectedPage = document.querySelector(".bodySlide");
+//     var mainn = document.querySelector("#content");
+//     if (ccc && Selected && SelectedPage && mainn) {
+//         Selected.addEventListener("click", function () {
+//             SelectedPage.classList.remove("d-none");
+//             ccc.classList.add("d-none");
+
+//         });
+
+//         var productPage = document.querySelector(".productPage");
+//         productPage.addEventListener('click', function () {
+//             SelectedPage.classList.add("d-none");
+//             ccc.classList.remove("d-none");
+//         });
+//     } 
+// });
+document.addEventListener('DOMContentLoaded', function () {
+    var ccc = document.querySelector(".ccc");
+    var Selected = document.querySelector(".Selected");
+    var SelectedPage = document.querySelector(".bodySlide");
+    var mainn = document.querySelector("#content");
+
+    Selected.addEventListener("click", function() {
+        // إخفاء العنصر ccc
+        ccc.classList.add("d-none");
+        // إظهار العنصر SelectedPage
+        SelectedPage.classList.remove("d-none");
+        // إخفاء المحتوى الرئيسي إذا لزم الأمر
+        // mainn.classList.add("d-none");
+    });
+});
+
+    </script>
+    <script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter and Gallery</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="sidebar" class="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">Adminhup</span>
+        </a>
+        <ul class="side-menu top active">
+            <li class=" homePage" onclick="location.href='index.html'"><a href="index.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Home</span>
+                </a></li>
+            <li onclick="location.href='product.html'" class="active productPage"><a href="product.html">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text">Product</span>
+                </a></li>
+            <li class="Selected"><a href="#bodySlide">
+                    <i class='bx bxs-doughnut-chart'></i>
+                    <span class="text">Selected Products</span>
+                </a></li>
+            <li onclick="location.href='contact.html'"><a href="#">
+                    <i class='bx bxs-message-dots'></i>
+                    <span class="text">Contact Us</span>
+                </a></li>
+        </ul>
+        <ul class="side-menu">
+            <li><a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="text">Setting</span>
+                </a></li>
+            <li><a href="#" class="logout">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Logout</span>
+                </a></li>
+        </ul>
+    </section>
+    <section id="content" class="z-3">
+        <nav>
+            <i class='bx bx-menu fs-3'></i>
+            <a href="#" class="nav-link">Categories</a>
+            <form action="">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <a href="#" class="notification">
+                <i class='bx bx-heart fs-3'></i>
+                <span class="num">0</span>
+            </a>
+            <a href="#" class="notification">
+                <i class='bx bxs-bell fs-3'></i>
+                <span class="num">8</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="image/Andrew Woods.png" class="" alt="">
+            </a>
+        </nav>
+
+      
+
+    </section>
+    <div class="fff" id="fff">
+        <section class="product-filter">
+            <h2>Filter Products</h2>
+            <form id="filterForm">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" placeholder="Enter max price...">
+
+                <label for="type">Type:</label>
+                <select id="type" name="type">
+                    <option value="all">All</option>
+                    <option value="washing-machine">Washing Machine</option>
+                    <option value="fridge">Fridge</option>
+                    <option value="SweepingRobot">Sweeping Robot</option>
+                    <option value="TV">TV</option>
+                    <option value="Labtop">Labtop</option>
+                    <option value="mixer">Mixer</option>
+                    <option value="washing-machine2">Modern Washing Set</option>
+                    <option value="Labtop2">Labtop</option>
+                    <option value="Labtop3">Labtop</option>
+                    <option value="lampshades">Lampshades</option>
+                    <option value="lampshades2">Lampshades</option>
+                    <option value="lampshades3">Lampshades</option>
+                    <option value="lampshades4">Lampshades</option>
+                    <option value="broom">Broom</option>
+                </select>
+
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" name="brand" placeholder="Enter brand...">
+
+                <button type="submit" class="btnFilter">Filter</button>
+            </form>
+        </section>
+
+        <section class="product-gallery" id="productGallery">
+            <h2>Products Gallery</h2>
+            <!-- Products will be dynamically loaded here -->
+        </section>
+
+        <section class="product-search">
+            <h2>Search Products</h2>
+            <input type="text" id="searchBar" placeholder="Search for a product...">
+        </section>
+    </div>
+    <div class="bodySlide d-none">
+        <h2 id="ntPro" class="">Not product</h2>
+        <div class="productt">
+            
+        </div>
+        <div class="foot border-top border-5 mt-2 rounded ">
+            <div class="d-flex justify-content-between px-1 pt-2">
+                <h5>Total Price :</h5>
+                <h5 id="totalPrice"></h5>
+                <div>
+                    <button class="btn btn-info text-light d-none" id="btnPrices">Show price</button>
+                    <button class="btn btn-info text-light d-none " id="btnShopNow">Shop All</button>
+                    <p class="p-2 rounded bg-info text-light d-none" id="btnSure">Purchased successfully</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    const products = JSON.parse(localStorage.getItem('products')) || [];
+
+    const productGallery = document.getElementById('productGallery');
+
+    // Load products into the gallery
+    products.forEach(product => {
+        const productElement = document.createElement('div');
+        productElement.className = 'product';
+        productElement.setAttribute('data-type', product.type);
+        productElement.setAttribute('data-brand', product.brand);
+
+        productElement.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>Price: $${product.price}</p>
+            <button class="btn btn-primary w-2 btn-shop" img11="${product.image}" h6="${product.name}" price="${product.price}">Shop</button>
+        `;
+
+        productGallery.appendChild(productElement);
+    });
+
+    var btnShop = document.querySelectorAll(".btn-shop");
+    var productt = document.querySelector(".productt");
+    var btnPrices = document.getElementById("btnPrices");
+    var totalPrice = 0;
+    var gg = document.getElementById("totalPrice");
+    var ntPro = document.getElementById("ntPro");
+    var btnShopNow = document.getElementById("btnShopNow")
+    btnShop.forEach(function (item) {
+        item.onclick = function () {
+            totalPrice += parseFloat(item.getAttribute("price"));
+            var h6 = item.getAttribute("h6");
+            var price = item.getAttribute("price");
+            var img11 = item.getAttribute("img11");
+
+            productt.innerHTML += `
+                <div class="justify-content-between p-2 text-dark rounded-3 mt-2 align-items-center">
+                    <img src="${img11}" class="w-25 rounded" alt="">
+                    <h6 class="fs-6">${h6}</h6>
+                    <h6>Price: $${price}</h6>
+                </div>
+            `;
+
+            if (productt.innerHTML.trim() !== "") {
+                btnPrices.classList.remove("d-none");
+                ntPro.classList.add("d-none");
+            }
+        }
+    });
+
+    btnPrices.onclick = function () {
+        gg.innerHTML = `${totalPrice} $`;
+        btnShopNow.classList.remove("d-none")
+        btnPrices.classList.add("d-none")
+    };
+    btnShopNow.addEventListener("click" , function(){
+    var suree =  confirm("Are you sure about the purchase?");
+    var btnSure = document.getElementById("btnSure")
+    btnShopNow.classList.add("disabled");
+    if(suree == true){
+        btnSure.classList.remove("d-none");
+        btnShopNow.classList.add("d-none")
+    }
+})
+});
+document.addEventListener('DOMContentLoaded', function () {
+    var fff2 = document.querySelector(".fff");
+    var Selected = document.querySelector(".Selected");
+    var SelectedPage = document.querySelector(".bodySlide");
+    var mainn = document.querySelector("#content");
+    if (fff2 && Selected && SelectedPage && mainn) {
+        Selected.addEventListener("click", function () {
+            SelectedPage.classList.remove("d-none");
+            fff2.classList.add("d-none");
+
+        });
+
+        var productPage = document.querySelector(".productPage");
+        productPage.addEventListener('click', function () {
+            SelectedPage.classList.add("d-none");
+            fff2.classList.remove("d-none");
+        });
+    } 
+});
+
+
+    </script>
+
+</body>
+
+</html>

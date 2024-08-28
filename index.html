@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="sidebar" class="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">Adminhup</span>
+        </a>
+        <ul class="side-menu top">
+            <li class="active homePage"><a href="index.html">
+                <i class='bx bxs-dashboard'></i>
+                <span class="text">Home</span>
+            </a></li>
+            <li onclick="location.href='product.html'"><a href="#">
+                <i class='bx bxs-shopping-bag-alt' ></i>
+                <span class="text">Product</span>
+            </a></li>
+            <li class="Selected"><a href="#">
+                <i class='bx bxs-doughnut-chart' ></i>
+                <span class="text">Selected Products</span>
+            </a></li>
+            <li onclick="location.href='contact.html'"><a href="#">
+                <i class='bx bxs-message-dots'></i>
+                <span class="text">Contact Us</span>
+            </a></li>
+            <!-- <li><a href="#">
+                <i class='bx bxs-group' ></i>
+                <span class="text">Team</span>
+            </a></li> -->
+        </ul>    
+        <ul class="side-menu">
+            <li><a href="#">
+                <i class='bx bxs-cog' ></i>
+                <span class="text">Setting</span>
+            </a></li>
+            <li><a href="#" class="logout">
+                <i class='bx bxs-log-out-circle' ></i>
+                <span class="text">Logout</span>
+            </a></li>
+        </ul>    
+    </section>
+    <section id="content" class="z-3">
+        <nav>
+            <i class='bx bx-menu fs-3' ></i>
+            <a href="#" class="nav-link">Categories</a>
+            <form action="">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <a href="#" class="notification">
+                <i class='bx bx-heart fs-3'></i>
+                <span class="num">0</span>
+            </a>
+            <a href="#" class="notification">
+                <i class='bx bxs-bell fs-3'></i>
+                <span class="num">8</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="image/Andrew Woods.png" alt="">
+            </a>
+        </nav>
+
+        <!-- <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><i class='bx bx-chevron-right'></i></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-download">
+                    <i class='bx bxs-cloud-download'></i>
+                    <span class="text">Download PDF</span>
+                </a>
+            </div>
+        </main> -->
+        
+    </section>
+    <main class="mt-3">
+        <section class="vh-100 hhh z-1 position-relative">
+            <div class="parent1">
+                <h1>We are an electrical appliances company</h1>
+                <p class="p1p">We offer everything that is good and of high quality!</p>
+                <p class="p2p rounded-4">Up to 70% discount on your first purchase!  <button class="btn1 w-25"><a href="#hh" class="text-light">Start buying</a></button></p>
+               
+                
+                
+            </div>
+    
+        </section>
+        <h2 class="text-center mt-5 tt">Special Offers</h2>
+        <div class="offers" id="hh">
+            <h3 class="text-danger ms-5">Up to 70% off sale now</h3>
+            <div class="child1 w-100 mb-5 rounded-4 container-fluid" id="Kitchen">
+                
+                <div class="row dd justify-content-between">
+                    <div class="p-ch1-p1 col-3 mb-5">
+                        <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                            <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                <span class="ss">60% discount</span> 
+                            </div>
+                            <div class="d-img">
+                                <img src="image/غسالة.jpg" style="height: 240px;" alt="">
+                            </div>
+                            <div class="text1 position-relative"> 
+                                <h6 class="px-2 mt-3 fs-5">Modern washing set</h6>
+                                <div class="row justify-content-between px-2 me-1 mt-3">
+                                    <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                    <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-primary w-75 btn-shop" img="image/غسالة.jpg" h6="Modern washing set" price="32">Shop</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-ch1-p1 col-3">
+                        <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                            <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                <span class="ss">60% discount</span> 
+                            </div>
+                            <div class="d-img">
+                                <img src="image/خلاط.avif" style="height: 240px;" alt="">
+                            </div>
+                            <div class="text1 position-relative"> 
+                                <h6 class="px-2 mt-3">Modern mixer set</h6>
+                                <div class="row justify-content-between px-2 me-1 mt-3">
+                                    <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                    <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-primary w-75 btn-shop" img="image/خلاط.avif" h6="Modern washing set" price="32">Shop</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-ch1-p1 col-3">
+                        <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                            <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                <span class="ss">60% discount</span> 
+                            </div>
+                            <div class="d-img">
+                                <img src="image/غسالة2.jpg" style="height: 240px;" alt="">
+                            </div>
+                            <div class="text1 position-relative"> 
+                                <h6 class="px-2 mt-3">Modern washing set</h6>
+                                <div class="row justify-content-between px-2 me-1 mt-3">
+                                    <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                    <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-primary w-75 btn-shop" img="image/غسالة2.jpg" h6="Modern washing set" price="32">Shop</button>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-ch1-p1 col-3">
+                        <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                            <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                <span class="ss">60% discount</span> 
+                            </div>
+                            <div class="d-img">
+                                <img src="image/ثلاجة2.jpg" style="height: 240px;" alt="">
+                            </div>
+                            <div class="text1 position-relative"> 
+                                <h6 class="px-2 mt-3">Blue half sleeve t-shirt</h6>
+                                <div class="row justify-content-between px-2 me-1 mt-3">
+                                    <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                    <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-primary w-75 btn-shop" img="image/ثلاجة2.jpg" h6="Modern washing set" price="32">Shop</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="child1 w-100 mb-5" id="Computers">
+                   
+                    <div class="row dd justify-content-between">
+                        <div class="p-ch1-p1 col-3 mb-5">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                    <span class="ss">60% discount</span> 
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/تلفاز3.jpg" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern TV set</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img="image/تلفاز3.jpg" h6="Modern washing set" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-ch1-p1 col-3" data-brand="HP" data-img="image/صورة واتساب بتاريخ 2024-08-15 في 17.19.23_bb904d80.jpg" data-name="Modern laptops" data-price="20">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4">
+                                    <i class='bx bx-heart fs-4 mt-1'></i> 
+                                    <span class="ss">60% discount</span>
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/صورة واتساب بتاريخ 2024-08-15 في 17.19.23_bb904d80.jpg" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern laptops</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Price: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img="image/صورة واتساب بتاريخ 2024-08-15 في 17.19.23_bb904d80.jpg" h6="Modern laptops" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-ch1-p1 col-3">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                    <span class="ss">60% discount</span> 
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/5555.jpg" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern laptops</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img="image/5555.jpg" h6="Modern washing set" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-ch1-p1 col-3">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                    <span class="ss">60% discount</span> 
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/77.jpg" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern laptops</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img="image/77.jpg" h6="Modern washing set" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="child1 w-100 mb-5" id="Room">
+                   
+                    <div class="row dd justify-content-between">
+                        <div class="p-ch1-p1 col-3 mb-5">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                    <span class="ss">60% discount</span> 
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/antique-decor-decoration-chair-old_1203-4562.jpg" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern lampshades</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img="image/antique-decor-decoration-chair-old_1203-4562.jpg" h6="Modern washing set" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-ch1-p1 col-3">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                    <span class="ss">60% discount</span> 
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/view-lighting-lamp-with-futuristic-design_23-2151037483.jpg" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern lampshades</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img="image/view-lighting-lamp-with-futuristic-design_23-2151037483.jpg" h6="Modern washing set" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-ch1-p1 col-3">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto border-4">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                    <span class="ss">60% discount</span> 
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/view-futuristic-light-lamp-design_23-2151037524.jpg" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern lampshades</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img="image/view-futuristic-light-lamp-design_23-2151037524.jpg" h6="Modern washing set" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-ch1-p1 col-3">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                    <span class="ss">60% discount</span> 
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/121.jpg" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern lampshades</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img="image/121.jpg" h6="Modern washing set" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="child1 w-100 mb-5" id="home">
+                  
+                    <div class="row dd justify-content-between">
+                        <div class="p-ch1-p1 col-3 mb-5">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto dddd">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                    <span class="ss">60% discount</span> 
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/مكنسة.jpg" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern broom set</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img="image/مكنسة.jpg" h6="Modern washing set" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-ch1-p1 col-3">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                    <span class="ss">60% discount</span> 
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/مروحة3.jpg" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern fan assembly</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img="image/مروحة3.jpg" h6="Modern washing set" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-ch1-p1 col-3">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1'></i> 
+                                    <span class="ss">60% discount</span> 
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/روبوت.jpg" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern Sweeping robot</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img="image/روبوت.jpg" h6="Modern washing set" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-ch1-p1 col-3">
+                            <div class="ch1-p1-ch1 col-11 bg-white h-100 m-auto">
+                                <div class="icons text-dark text-center d-flex align-items-baseline justify-content-between px-4"><i class='bx bx-heart fs-4 mt-1 '></i> 
+                                    <span class="ss">60% discount</span> 
+                                </div>
+                                <div class="d-img">
+                                    <img src="image/مكنسة55.avif" style="height: 240px;" alt="">
+                                </div>
+                                <div class="text1 position-relative"> 
+                                    <h6 class="px-2 mt-3">Modern broom set</h6>
+                                    <div class="row justify-content-between px-2 me-1 mt-3">
+                                        <p class="col-7 fs-5 text-danger">Prise: 20$</p>
+                                        <p class="col-4 fs-5 text-secondary"><del>52$</del> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary w-75 btn-shop" img11="image/مكنسة55.avif" h6="Modern washing set" price="32">Shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="bodySlide d-none">
+        <h2 id="ntPro" class="">Not product</h2>
+        <div class="productt">
+            
+        </div>
+        <div class="foot border-top border-5 mt-2 rounded ">
+            <div class="d-flex justify-content-between px-1 pt-2">
+                <h5>Total Price :</h5>
+                <h5 id="totalPrice"></h5>
+                <div>
+                    <button class="btn btn-info text-light d-none" id="btnPrices">Show price</button>
+                    <button class="btn btn-info text-light d-none " id="btnShopNow">Shop All</button>
+                    <p class="p-2 rounded bg-info text-light d-none" id="btnSure">Purchased successfully</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<script>
+    const productsData = [
+        {
+            type: 'washing-machine',
+            brand: 'Galaxy',
+            name: 'Modern Washing Set',
+            price: 1200,
+            image: 'image/غسالة.jpg'
+        },
+        {
+            type: 'fridge',
+            brand: 'LG',
+            name: 'Energy Efficient Fridge',
+            price: 2800,
+            image: 'image/ثلاجة2.jpg'
+        },
+        {
+            type: 'SweepingRobot',
+            brand: 'samsung',
+            name: 'Sweeping Robot',
+            price: 10000,
+            image: 'image/روبوت.jpg'
+        }
+        ,
+        {
+            type: 'TV',
+            brand: 'Smart',
+            name: 'TV',
+            price: 7000,
+            image: 'image/تلفاز3.jpg'
+        }
+        ,
+        {
+            type: 'Labtop',
+            brand: 'HP',
+            name: 'Labtop',
+            price: 5000,
+            image: 'image/صورة واتساب بتاريخ 2024-08-15 في 17.19.23_bb904d80.jpg'
+        },
+        {
+            type: 'mixer',
+            brand: 'KitchenAid',
+            name: 'Mixer',
+            price: 100,
+            image: 'image/خلاط.avif'
+        },
+        {
+            type: 'washing-machine2',
+            brand: 'LG',
+            name: 'Modern Washing Set',
+            price: 1300,
+            image: 'image/غسالة2.jpg'
+        },
+        {
+            type: 'Labtop2',
+            brand: 'Apple',
+            name: 'Labtop',
+            price: 3000,
+            image: 'image/5555.jpg'
+        },
+        {
+            type: 'Labtop3',
+            brand: 'Acer',
+            name: 'Labtop',
+            price: 3000,
+            image: 'image/77.jpg'
+        },
+        {
+            type: 'lampshades',
+            brand: 'Cree',
+            name: 'lampshades',
+            price: 3000,
+            image: 'image/antique-decor-decoration-chair-old_1203-4562.jpg'
+        },
+        {
+            type: 'lampshades2',
+            brand: 'Osram',
+            name: 'lampshades',
+            price: 3000,
+            image: 'image/view-lighting-lamp-with-futuristic-design_23-2151037483.jpg'
+        },
+        {
+            type: 'lampshades3',
+            brand: 'Sylvania',
+            name: 'lampshades',
+            price: 3000,
+            image: 'image/view-futuristic-light-lamp-design_23-2151037524.jpg'
+        },
+        {
+            type: 'lampshades4',
+            brand: 'Zumtobel',
+            name: 'lampshades',
+            price: 3000,
+            image: 'image/121.jpg'
+        },
+        {
+            type: 'broom',
+            brand: 'Zumtobel',
+            name: 'broom',
+            price: 3000,
+            image: 'image/مكنسة.jpg'
+        }
+
+       
+    ];
+
+    localStorage.setItem('products', JSON.stringify(productsData));
+</script>
+<!-- \<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const products = document.querySelectorAll('.p-ch1-p1');
+
+    products.forEach(product => {
+        const img = product.getAttribute('data-img');
+        const name = product.getAttribute('data-name');
+        const price = product.getAttribute('data-price');
+        const brand = product.getAttribute('data-brand');
+        const shopButton = product.querySelector('.btn-shop');
+
+        if (shopButton) {
+            shopButton.addEventListener('click', function() {
+                const selectedProducts = JSON.parse(localStorage.getItem('selectedProducts')) || [];
+
+                selectedProducts.push({ img, name, price, brand });
+
+                localStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
+
+                alert(`${name} has been added to your selection!`);
+            });
+        }
+    });
+});
+
+</script> -->
+
+    <script src="main.js"></script>
+</body>
+</html>
